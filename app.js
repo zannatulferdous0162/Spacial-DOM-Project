@@ -28,22 +28,36 @@ for (const btn of allBtn) {
         selectedContainer.appendChild(div);
 
         updateTotalCost(price);
+        updategrandTotal();
     })
 }
 
-function updateTotalCost(value){
-    const totalCost =   getConvartedVlue('total-cost');
+function updategrandTotal(status) {
+
+    if(status){
+
+    }
+    else{
+        const totalCost = getConvartedValue('total-cost');
+        document.getElementById('grand-total').innerText= totalCost;
+    }
+ 
+}
+
+
+function updateTotalCost(value) {
+    const totalCost = getConvartedValue('total-cost');
     const sum = totalCost + parseInt(value);
     document.getElementById('total-cost').innerText = sum;
 }
 
 
 
-// const price = getConvartedVlue('budget');
-// const cartCount= getConvartedVlue('cart');
-// const leftCount = getConvartedVlue('left');
+// const price = getConvartedValue('budget');
+// const cartCount= getConvartedValue('cart');
+// const leftCount = getConvartedValue('left');
 
-function getConvartedVlue(id) {
+function getConvartedValue(id) {
     const price = document.getElementById(id).innerText;
     const convertPrice = parseInt(price);
     return convertPrice;
