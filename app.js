@@ -35,11 +35,11 @@ for (const btn of allBtn) {
 function updategrandTotal(status) {
 
     if(status){
-
-    }
-    else{
         const totalCost = getConvartedValue('total-cost');
         document.getElementById('grand-total').innerText= totalCost;
+    }
+    else{
+     
     }
  
 }
