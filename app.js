@@ -35,8 +35,8 @@ for (const btn of allBtn) {
 function updategrandTotal(status) {
 
     if(status){
-        const totalCost = getConvartedValue('total-cost');
-        document.getElementById('grand-total').innerText= totalCost;
+        // const totalCost = getConvartedValue('total-cost');
+        // document.getElementById('grand-total').innerText= totalCost;
     }
     else{
      
@@ -51,11 +51,6 @@ function updateTotalCost(value) {
     document.getElementById('total-cost').innerText = sum;
 }
 
-
-
-// const price = getConvartedValue('budget');
-// const cartCount= getConvartedValue('cart');
-// const leftCount = getConvartedValue('left');
 
 function getConvartedValue(id) {
     const price = document.getElementById(id).innerText;
