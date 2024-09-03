@@ -34,13 +34,13 @@ for (const btn of allBtn) {
 
 function updategrandTotal(status) {
 
-    // if(status){
-    //     const totalCost = getConvartedValue('total-cost');
-    //     document.getElementById('grand-total').innerText= totalCost;
-    // }
-    // else{
+    if(status){
+        const totalCost = getConvartedValue('total-cost');
+        document.getElementById('grand-total').innerText= totalCost;
+    }
+    else{
      
-    // }
+    }
  
 }
 
