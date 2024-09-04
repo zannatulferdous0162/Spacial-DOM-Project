@@ -33,17 +33,22 @@ for (const btn of allBtn) {
 }
 
 function updategrandTotal(status) {
+    if (status == 'undefined') {
+        const totalCost = getConvartedValue('total-cost');
+        document.getElementById('grand-total').innerText = totalCost;
+    }
+    else {
+        const couponCodeValue = document.getElementById('coupon-code').value;
+        if (couponCodeValue == 'love420') {
 
-    if(status){
-        // const totalCost = getConvartedValue('total-cost');
-        document.getElementById('grand-total').innerText= totalCost;
+        }else
+        {
+            alert('Please enter a valid coupon code');
+        }
     }
-    else{
-     
-    }
- 
+
+
 }
-
 
 function updateTotalCost(value) {
     const totalCost = getConvartedValue('total-cost');
